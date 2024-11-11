@@ -35,9 +35,8 @@
         <img class="w-[90px]" src="./images/logo-color-removebg-preview.png" alt="">
         <ul class="flex justify-between items-center sofadi text-xl gap-6">
           <li class="hover:text-green-500 cursor-pointer"><a href="./index.html">Home</a></li>
-          <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html">Destination</a></li>
-          <li class="hover:text-green-500 cursor-pointer">About</li>
-          <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact</a></li>
+          <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html"> Ticket</a></li>
+          <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact Us</a></li>
         </ul>
         <button
           class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
@@ -55,9 +54,9 @@
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li class="hover:text-green-500"><a>Home</a></li>
-              <li class="hover:text-green-500"><a>About</a></li>
-              <li class="hover:text-green-500"><a>Destination</a></li>
+              <li class="hover:text-green-500 cursor-pointer"><a href="./index.html">Home</a></li>
+              <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html"> Ticket</a></li>
+              <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact Us</a></li>
             </ul>
           </div>
           <img class="w-[100px]" src="./images/asj-bus-high-resolution-logo-removebg-preview.png" alt="">
@@ -93,7 +92,8 @@
               <button
                 class="text-xl text-black font-semibold z-20 w-32 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
                   class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
-                  class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>But Ticket</button>
+                  class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>But
+                Ticket</button>
             </a>
           </div>
         </div>
@@ -144,37 +144,57 @@
         <button
           class="text-2xl font-semibold z-20 w-48 hover:scale-95 h-14 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
             class="absolute bg-[#5ada46] size-48 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
-            class="absolute bg-[#42d22c] size-48 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>See All Offer's</button>
+            class="absolute bg-[#42d22c] size-48 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>See
+          All Offer's</button>
       </div>
     </section>
-
-    
   </main>
   <!-- Footer Section -->
-  <footer class="mt-24 px-16 md:px-36 py-20 bg-black text-[#ffffffA6]">
-    <div class=" flex flex-col md:flex-row justify-between text-center md:text-start items-center">
-      <div>
-        <h1 class="text-4xl font-bold mb-2">P-Ticket</h1>
-        <p>
-          P-Ticket is a digital platform to make<br /> your
-          daily commuting better.
+  <footer class="mt-12 py-8 px-10">
+    <div class="footer">
+      <aside>
+        <i class="fa-solid fa-bus text-5xl"></i>
+        <p class="text-md font-medium">
+          Book your trip in minute, <br> get full
+          Control for much longer.
         </p>
-      </div>
-      <div class="mt-12 md:mt-0">
-        <h6 class="text-xl mb-2 font-medium">Download our app</h6>
-        <div class="flex items-center rounded-xl gap-2 p-2 border-2 border-gray-500">
-          <img class="h-[40px]" src="./images/playstore.png" alt="" />
-          <div>
-            <p class="font-medium">Get it on</p>
-            <h1 class="text-2xl font-bold">Google Play</h1>
+      </aside>
+      <nav>
+        <h6 class="text-lg roboto font-semibold">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="text-lg roboto font-semibold">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="text-lg roboto font-semibold">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="text-lg roboto font-semibold">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+            <button class="btn bg-[#1DD100] join-item">Subscribe</button>
           </div>
-        </div>
-        </nav>
-      </div>
+        </fieldset>
+      </form>
     </div>
     <hr class="mt-8 mb-6 bg-[#000000A6] border-dashed ">
     <div class="flex flex-col lg:flex-row justify-between text-center">
-      <p class="mb-10 text-center">@all rights reserved, P-Ticket services limited.2024</p>
+      <p class=" text-center">@all rights reserved, P-Ticket services limited.2024</p>
       <ul class="flex justify-center gap-8 underline cursor-pointer">
         <li>Terms & condition</li>
         <li>Return & refund policy</li>
