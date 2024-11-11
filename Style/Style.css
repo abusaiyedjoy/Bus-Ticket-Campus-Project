@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Sofadi+One&family=Sofia&display=swap");
+.sofia {
+  font-family: "Sofia", cursive;
+}
+
+.sofadi {
+  font-family: "Sofadi One";
+}
+
+.roboto {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #f4f4f9;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.hire-me-button {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background: linear-gradient(#2e2e2e, #1e1e1e);
+  color: #f4f4f9;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+}
+
+.hire-me-button:hover {
+  box-shadow: 0 0 8px rgba(255, 183, 77, 0.9);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #ffb74d;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.desktop-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #f4f4f9;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .desktop-navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+    width: 100%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .menu li {
+    margin-bottom: 1rem;
+  }
+
+  #mobile-menu {
+    background-color: #2e2e2e;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+}
