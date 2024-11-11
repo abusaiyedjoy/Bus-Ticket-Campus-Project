@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon" />
+    <!-- Font Awesome Setup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./style/Style.css">
+    <!--Custom CSS  -->
+    <style>
+        html {
+            scroll-behavior: smooth !important;
+        }
+    </style>
+    <!-- Title -->
+    <title>Bus Ticker Landing Page</title>
+</head>
+
+<body class="container mx-auto">
+    <!-- Navber Section -->
+    <nav class="backdrop-blur-lg md:p-3 w-full md:container md:mx-auto fixed z-10 top-0  opacity-100 ">
+        <!-- Navbar for Desktop and Tablet -->
+        <div class="hidden sm:block,flex sm:flex justify-between items-center">
+            <img class="w-[90px]" src="./images/logo-color-removebg-preview.png" alt="">
+            <ul class="flex justify-between items-center sofadi text-xl gap-6">
+                <li class="hover:text-green-500 cursor-pointer"><a href="./index.html">Home</a></li>
+                <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html">Destination</a></li>
+                <li class="hover:text-green-500 cursor-pointer">About</li>
+                <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact</a></li>
+            </ul>
+            <button
+                class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+                    class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
+                    class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
+        </div>
+        <!-- Navbar for Mobile -->
+        <div class=" flex justify-between items-center sm:hidden navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="hover:text-green-500"><a>Home</a></li>
+                        <li class="hover:text-green-500"><a>About</a></li>
+                        <li class="hover:text-green-500"><a>Destination</a></li>
+                    </ul>
+                </div>
+                <img class="w-[100px]" src="./images/asj-bus-high-resolution-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+                        class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
+                        class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+    <section class="mt-24">
+        <div class="hero h-[85vh] w-full rounded-xl bg-cover" style="
+            background-image: url('./images/banner.png');
+            ;
+          ">
+            <div class="hero-overlay bg-opacity-10
+           rounded-xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-xl text-white">
+                    <h1 class="mb-5 text-5xl font-bold roboto">
+                        ASJ Paribahan
+                    </h1>
+                    <p class="mb-5 sofia">
+                        Yes, you can run unit tests and view the results directly within the
+                        app. The integrated
+                        testing features allow for a streamlined .
+                    </p>
+                    <a href="#scrollStop" id="BuyTicket">
+                        <button
+                            class="text-xl text-black font-semibold z-20 w-32 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+                                class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
+                                class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>But
+                            Ticket</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="flex flex-wrap gap-16 my-16">
+            <div class="bg-[#F5F2EB] shadow-xl relative  pb-6 pt-12 px-12 text-center w-lg mx-auto rounded-xl">
+                <div
+                    class="absolute -top-8 w-16 h-16 left-1/2 transform -translate-x-1/2 rounded-full bg-[#1dd111] hover:scale-125 duration-200 ease-in-out flex justify-center items-center cursor-pointer text-white">
+                    <i class="fa-solid fa-envelope-open-text text-2xl text-black"></i>
+                </div>
+                <h1 class="text-2xl font-bold sofadi pb-4 text-gray-800  ">Write for US</h1>
+                <a href="mailto:abusaiyedjoy1@gmail.com"
+                    class="hover:text-secondary text-gray-800  ">abusaiyedjoy1@gmail.com</a>
+            </div>
+            <div class="bg-[#F5F2EB] shadow-xl relative  pb-6 pt-12 px-16 text-center w-lg mx-auto rounded-xl">
+                <div
+                    class="absolute -top-8 w-16 h-16 left-1/2 transform -translate-x-1/2 rounded-full bg-[#1dd111] hover:scale-125 duration-200 ease-in-out flex justify-center items-center cursor-pointer text-white">
+                    <i class="fa-solid fa-location-dot text-2xl text-black"></i>
+                </div>
+                <h1 class="text-2xl font-bold sofadi pb-4  text-gray-800 ">Visit our Office</h1>
+                <p class=" text-gray-800 ">Foy's Lake / Chittagong <br /> Bangladesh</p>
+            </div>
+            <div class="bg-[#F5F2EB] shadow-xl relative  pb-6 pt-12 px-16 text-center max-w-lg mx-auto rounded-xl">
+                <div
+                    class="absolute -top-8 w-16 h-16 left-1/2 transform -translate-x-1/2 rounded-full bg-[#1dd111] hover:scale-125 duration-200 ease-in-out flex justify-center items-center cursor-pointer text-white">
+                    <i class="fa-solid fa-phone-volume text-2xl text-black"></i>
+                </div>
+                <h1 class="text-2xl font-bold sofadi pb-4  text-gray-800 ">Contact with US</h1>
+                <p class=" text-gray-800 ">+8801823567254</p>
+            </div>
+        </div>
+        <div class="max-w-2xl w-auto mx-6 lg:mx-10 xl:mx-16 mt-8">
+            <h1 class="text-2xl text-[#1DD100] font-bold sofia">Contact Us</h1>
+            <h2 class="text-gray-800  text-4xl font-bold roboto ">Send us a message<span
+                    class="text-[#1DD100] text-5xl">.</span></h2>
+            <p class="text-gray-800  text-lg font-medium sofia">The domestic dog is a doiated
+                dendant of the wolf. The dog derived from an ancient, extinct wolf, and the modern grey.</p>
+        </div>
+        <div class="xl:mt-12 flex xl:flex-row flex-col-reverse max-w-4xl mx-auto gap-10 overflow-hidden">
+            <form class='my-12 mx-8 flex w-full flex-col gap-8 '>
+                <label class='flex flex-col w-full'>
+                    <span class=' text-gray-800 font-medium mb-4 sofadi'>👨‍✈️ Your Name</span>
+                    <input type='text' name='name' placeholder="What's your good name?"
+                        class=' bg-[#F5F2EB] py-4 px-6 placeholder:text-gray-400 text-gray-800 -lg outline-none border-none font-medium' />
+                </label>
+                <label class='flex flex-col'>
+                    <span class=' text-gray-800 font-medium mb-4 sofadi'>📩 Your email</span>
+                    <input type='email' name='email' placeholder="What's your web address?"
+                        class=' bg-[#F5F2EB] py-4 px-6 placeholder:text-gray-400 text-gray-800 -lg outline-none border-none font-medium' />
+                </label>
+                <label class='flex flex-col'>
+                    <span class=' text-gray-800 font-medium mb-4 sofadi'>📝 Your Message</span>
+                    <textarea rows="7" name="message" placeholder="What you want to say?"
+                        class="bg-[#F5F2EB] py-4 px-6 placeholder:text-gray-400 text-gray-800 -lg outline-none border-none font-medium"></textarea>
+                </label>
+                <button type='submit'
+                    class=" w-52 bg-[#3dc728] py-2 px-2 rounded-xl outline-none font-bold h-16 mb-4 mt-2duration-300 text-gray-600flex items-center justify-center group">
+
+                    <span class="duration-500 text-xl">Send Message</span>
+                </button>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
