@@ -9,6 +9,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Favicon -->
   <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon" />
+  <!-- Font Awesome Setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css File -->
+  <link rel="stylesheet" href="./style/Style.css">
+  <!--Custom CSS  -->
   <style>
     html {
       scroll-behavior: smooth !important;
@@ -20,52 +27,52 @@
 
 <body>
   <!-- Header Section -->
-  <header class="container mx-auto mt-8">
+  <header class="container mx-auto">
     <!-- Navber Section -->
-    <nav>
+    <nav class="backdrop-blur-lg md:p-3 w-full md:container md:mx-auto fixed z-10 top-0  opacity-100 ">
       <!-- Navbar for Desktop and Tablet -->
       <div class="hidden sm:block,flex sm:flex justify-between items-center">
-        <h1 class="text-4xl font-bold">P-Ticket</h1>
-        <ul class="flex justify-between items-center text-lg gap-6">
-          <li class="hover:text-green-400 cursor-pointer">Home</li>
-          <li class="hover:text-green-400 cursor-pointer">About</li>
-          <li class="hover:text-green-400 cursor-pointer">Destination</li>
-          <li class="hover:text-green-400 cursor-pointer">Search</li>
+        <img class="w-[90px]" src="./images/logo-color-removebg-preview.png" alt="">
+        <ul class="flex justify-between items-center sofadi text-xl gap-6">
+          <li class="hover:text-green-500 cursor-pointer">Home</li>
+          <li class="hover:text-green-500 cursor-pointer">Destination</li>
+          <li class="hover:text-green-500 cursor-pointer">About</li>
+          <li class="hover:text-green-500 cursor-pointer">Search</li>
         </ul>
         <button
-          class="btn btn-outline rounded-xl text-green-400 font-bold text-xl hover:text-green-400 hover:bg-gray-100">
-          Bus <img class="hover:" src="./images/bus-icon.png" alt="" />
-        </button>
+          class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+            class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
+            class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
       </div>
       <!-- Navbar for Mobile -->
       <div class=" flex justify-between items-center sm:hidden navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li class="hover:text-green-400"><a>Home</a></li>
-              <li class="hover:text-green-400"><a>About</a></li>
-              <li class="hover:text-green-400"><a>Destination</a></li>
-              <li class="hover:text-green-400"><a>Search</a></li>
+              <li class="hover:text-green-500"><a>Home</a></li>
+              <li class="hover:text-green-500"><a>About</a></li>
+              <li class="hover:text-green-500"><a>Destination</a></li>
+              <li class="hover:text-green-500"><a>Search</a></li>
             </ul>
           </div>
-          <h1 class="text-2xl font-bold">P-Ticket</h1>
+          <img class="w-[100px]" src="./images/asj-bus-high-resolution-logo-removebg-preview.png" alt="">
         </div>
         <div class="navbar-end">
           <button
-            class="btn btn-outline rounded-xl text-green-400 font-bold text-xl hover:text-green-400 hover:bg-gray-100">
-            Bus <img class="hover:" src="./images/bus-icon.png" alt="" />
-          </button>
+            class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+              class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
+              class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
         </div>
       </div>
     </nav>
     <!-- Banner Section -->
-    <section class="container mx-auto mt-8">
+    <section class="container mx-auto mt-24">
       <div class="hero h-[85vh] w-full rounded-xl bg-cover" style="
             background-image: url('./images/banner.png');
             ;
@@ -74,17 +81,17 @@
            rounded-xl"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-xl text-white">
-            <h1 class="mb-5 text-5xl font-bold">
+            <h1 class="mb-5 text-5xl font-bold roboto">
               End-to-End Travel with <br />
-              <span class="text-[#1DD100]">P Paribahan</span>
+              <span class="text-[#1DD100]">ASJ Paribahan</span>
             </h1>
-            <p class="mb-5">
+            <p class="mb-5 sofia">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined
               .
             </p>
             <a href="#scrollStop" id="BuyTicket"
-              class="btn btn-success rounded-xl bg-[#1DD100ff] hover:bg-[#1DD100ff] border-none text-lg font-bold">
+              class="btn btn-success rounded-xl bg-[#1DD100ff] hover:bg-[#1DD100ff] border-none text-lg font-bold sofadi">
               Buy Tickets
             </a>
           </div>
@@ -538,7 +545,6 @@
       </ul>
     </div>
   </footer>
-  <script src="./scripts/ticket.js"></script>
 </body>
 
 </html>

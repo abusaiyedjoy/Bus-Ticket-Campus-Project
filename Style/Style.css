@@ -17,116 +17,49 @@
   font-family: "Roboto Slab", serif;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #f4f4f9;
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
 }
 
 .navbar {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ccc;
-  text-decoration: none;
+.logo-img {
+  width: 90px;
 }
 
-.hire-me-button {
-  display: inline-flex;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  background: linear-gradient(#2e2e2e, #1e1e1e);
-  color: #f4f4f9;
-  text-decoration: none;
-  transition: box-shadow 0.3s;
-}
-
-.hire-me-button:hover {
-  box-shadow: 0 0 8px rgba(255, 183, 77, 0.9);
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu li a {
-  font-size: 1.1rem;
-  color: #ccc;
-  text-decoration: none;
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-family: 'Sofadi', sans-serif;
   transition: color 0.3s;
 }
 
-.menu li a:hover,
-.menu li a.active {
-  color: #ffb74d;
+.text-white-300 {
+  color: #d3d3d3 !important;
 }
 
-.mobile-navbar {
-  display: none;
+.hover-green:hover {
+  color: #38a169 !important;
 }
 
-.desktop-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.custom-btn {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #38a169;
+  border: 2px solid #38a169;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  transition: all 0.3s;
 }
 
-.menu-button {
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: #f4f4f9;
+.custom-btn:hover {
+  color: #38a169;
+  background-color: #f3f4f6;
 }
 
-.hidden {
-  display: none;
-}
-
-@media (max-width: 768px) {
-
-.navbar-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-  .desktop-navbar {
-    display: none;
-  }
-
-  .mobile-navbar {
-    display: block;
-    width: 100%;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .menu li {
-    margin-bottom: 1rem;
-  }
-
-  #mobile-menu {
-    background-color: #2e2e2e;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-  }
+.bus-icon {
+  width: 20px;
 }
