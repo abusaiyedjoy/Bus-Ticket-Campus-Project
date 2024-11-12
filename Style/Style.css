@@ -16,6 +16,21 @@
 .roboto {
   font-family: "Roboto Slab", serif;
 }
-
-
-
+/* Bus Icon's Animation */
+@keyframes busMove {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(10px); /* Moves forward */
+  }
+  75% {
+    transform: translateX(-10px); /* Returns to original position */
+  }
+  100% {
+    transform: translateX(0); /* Returns to original position */
+  }
+}
+.bus-wiggle {
+  animation: busMove 1.5s infinite ease-in-out;
+}

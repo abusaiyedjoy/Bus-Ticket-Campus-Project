@@ -29,7 +29,7 @@
   <!-- Header Section -->
   <header class="container mx-auto">
     <!-- Navber Section -->
-    <nav class="backdrop-blur-lg md:p-3 w-full md:container md:mx-auto fixed z-10 top-0  opacity-100 ">
+    <nav class="backdrop-blur-lg md:p-3 w-full md:container md:mx-auto fixed z-50 top-0  opacity-100 ">
       <!-- Navbar for Desktop and Tablet -->
       <div class="hidden sm:block,flex sm:flex justify-between items-center">
         <img class="w-[90px]" src="./images/logo-color-removebg-preview.png" alt="">
@@ -88,7 +88,7 @@
               the app. The integrated testing features allow for a streamlined
               .
             </p>
-            <a href="#scrollStop" id="BuyTicket">
+            <a href="./ticket.html" id="BuyTicket">
               <button
                 class="text-xl text-black font-semibold z-20 w-32 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
                   class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
@@ -103,9 +103,13 @@
   <!-- Main Section -->
   <main class="container mx-auto">
     <section class="mt-14">
-      <h1 class="text-4xl font-bold text-center mb-12 roboto">
-        Best offers for you
-      </h1>
+      <div class="text-center w-full space-y-4 mx-auto py-12">
+        <i class="fa-solid fa-van-shuttle mx-auto text-4xl text-green-500 bus-wiggle"></i>
+        <h1 class="mx-auto sofadi text-center text-gray-600 ">-- Offer's --</h1>
+        <h2 class="text-3xl font-semibold text-center roboto capitalize lg:text-5xl text-gray-800">
+          Best Offers for you
+        </h2>
+      </div>
       <div class="flex flex-col md:flex-row justify-center gap-8 items-center">
         <div class="card w-[370px] relative bg-[#FFBF0F] flex gap-8 text-neutral-content">
           <div class="card-body px-5 py-7">
@@ -149,8 +153,200 @@
       </div>
     </section>
   </main>
+  <!-- Service Section -->
+  <section>
+    <div class="text-center w-full space-y-4 mx-auto py-12">
+      <i class="fa-solid fa-van-shuttle mx-auto text-4xl text-green-500 bus-wiggle"></i>
+      <h1 class="mx-auto sofadi text-center text-gray-600 ">-- Services --</h1>
+      <h2 class="text-3xl font-semibold text-center roboto capitalize lg:text-5xl text-gray-800">
+        We Offer Best Services
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container mx-auto">
+      <div
+        class="product-card w-[250px] h-[280px] mx-auto rounded-md shadow-xl hover:shadow-2xl overflow-hidden relative cursor-pointer snap-start shrink-0 py-6 mb-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+        <div class="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150">
+          <div class="flex gap-1">
+            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="1" fill="none" viewBox="0 0 24 24"
+              class="fill-green-300 rotate-[24deg]" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute top-10 uppercase text-center leading-none z-40">
+          <p class="font-bold text-xl tracking-wider text-gray-800 roboto">Calculated <br> Weather </p>
+        </div>
+        <div
+          class="absolute bottom-0 h-36 transition-all duration-300 group-hover:h-32 flex flex-col justify-end items-center p-3 rounded-t-full bg-green-400">
+          <img class="w-[50px] h-[50px]" src="./images/Group (1).png" alt="" />
+          <p class="text-gray-100 mt-3 text-md text-center sofia">Built Wicket longer admire do barton vanity itself do
+            in it.</p>
+        </div>
+
+      </div>
+      <div
+        class="product-card w-[250px] h-[280px] mx-auto rounded-md shadow-xl hover:shadow-2xl overflow-hidden relative cursor-pointer snap-start shrink-0 py-6 mb-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+        <div class="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150">
+          <div class="flex gap-1">
+            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="1" fill="none" viewBox="0 0 24 24"
+              class="fill-green-300 rotate-[24deg]" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute top-10 uppercase text-center leading-none z-40">
+          <p class="font-bold text-xl tracking-wider text-gray-800 roboto">Best <br> Flights </p>
+        </div>
+        <div
+          class="absolute bottom-0 h-36 transition-all duration-300 group-hover:h-32 flex flex-col justify-end items-center p-3 rounded-t-full bg-green-400">
+          <img class="w-[90px] h-[50px]" src="./images/bus-8794912_1280-removebg-preview.png" alt="" />
+          <p class="text-gray-100 mt-3 text-md text-center sofia">Engrossed listening. Park gate sell they west hard for
+            the.</p>
+        </div>
+
+      </div>
+      <div
+        class="product-card w-[250px] h-[280px] mx-auto rounded-md shadow-xl hover:shadow-2xl overflow-hidden relative cursor-pointer snap-start shrink-0 py-6 mb-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+        <div class="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150">
+          <div class="flex gap-1">
+            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="1" fill="none" viewBox="0 0 24 24"
+              class="fill-green-300 rotate-[24deg]" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute top-10 uppercase text-center leading-none z-40">
+          <p class="font-bold text-xl tracking-wider text-gray-800 roboto">Local <br> Events </p>
+        </div>
+        <div
+          class="absolute bottom-0 h-36 transition-all duration-300 group-hover:h-32 flex flex-col justify-end items-center p-3 rounded-t-full bg-green-400">
+          <img class="w-[60px] h-[50px]" src="./images/Group 50.png" alt="" />
+          <p class="text-gray-100 mt-3 text-md text-center sofia">Barton vanity itself do in it. Preferd to men it
+            listening. </p>
+        </div>
+
+      </div>
+      <div
+        class="product-card w-[250px] h-[280px] mx-auto rounded-md shadow-xl hover:shadow-2xl overflow-hidden relative cursor-pointer snap-start shrink-0 py-6 mb-8 px-6 bg-white flex flex-col items-center justify-center gap-3 transition-all duration-300 group">
+        <div class="absolute -left-[40%] top-0 group-hover:rotate-12 transition-all duration-300 group-hover:scale-150">
+          <div class="flex gap-1">
+            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="1" fill="none" viewBox="0 0 24 24"
+              class="fill-green-300 rotate-[24deg]" height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+        </div>
+        <div class="absolute top-10 uppercase text-center leading-none z-40">
+          <p class="font-bold text-xl tracking-wider text-gray-800 roboto">Customization <br> Services </p>
+        </div>
+        <div
+          class="absolute bottom-0 h-36 transition-all duration-300 group-hover:h-32 flex flex-col justify-end items-center p-3 rounded-t-full bg-green-400">
+          <img class="w-[50px] h-[50px]" src="./images/Group (2).png" alt="" />
+          <p class="text-gray-100 mt-3 text-md text-center sofia">We deliver outsourced
+            services for our customers</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Destination Section -->
+  <section>
+    <div class="text-center w-full space-y-4 mx-auto py-12">
+      <i class="fa-solid fa-van-shuttle mx-auto text-4xl text-green-500 bus-wiggle"></i>
+      <h1 class="mx-auto sofadi text-center text-gray-600 ">-- Top Selling --</h1>
+      <h2 class="text-3xl font-semibold text-center roboto capitalize lg:text-5xl text-gray-800">
+        Top Destinations
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container mx-auto">
+      <div
+        class="flex max-w-[280px] h-[350px] flex-col items-center justify-center space-y-3 rounded-xl bg-gray-100 pb-5 shadow-lg">
+        <div class="relative cursor-pointer w-full h-[280px] rounded-t-xl overflow-hidden group">
+          <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            src="./images/banner.png" alt="" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500 ease-in-out">
+          </div>
+        </div>
+
+        <div class="pt-2 w-full px-2">
+          <div class="flex justify-between items-start">
+            <h1 class="text-2xl font-semibold roboto text-gray-700">Cox's Bazar</h1>
+            <p class="text-lg font-medium text-gray-600 sofadi">$3.5k</p>
+          </div>
+          <p class="text-sm mt-2 font-medium text-gray-600 sofia">🚍 12 Day's trip</p>
+        </div>
+      </div>
+      <div
+        class="flex max-w-[280px] h-[350px] flex-col items-center justify-center space-y-3 rounded-xl bg-gray-100 pb-5 shadow-lg">
+        <div class="relative cursor-pointer w-full h-[280px] rounded-t-xl overflow-hidden group">
+          <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            src="./images/banner.png" alt="" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500 ease-in-out">
+          </div>
+        </div>
+
+        <div class="pt-2 w-full px-2">
+          <div class="flex justify-between items-start">
+            <h1 class="text-2xl font-semibold roboto text-gray-700">Cox's Bazar</h1>
+            <p class="text-lg font-medium text-gray-600 sofadi">$3.5k</p>
+          </div>
+          <p class="text-sm mt-2 font-medium text-gray-600 sofia">🚍 12 Day's trip</p>
+        </div>
+      </div>
+      <div
+        class="flex max-w-[280px] h-[350px] flex-col items-center justify-center space-y-3 rounded-xl bg-gray-100 pb-5 shadow-lg">
+        <div class="relative cursor-pointer w-full h-[280px] rounded-t-xl overflow-hidden group">
+          <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            src="./images/banner.png" alt="" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500 ease-in-out">
+          </div>
+        </div>
+
+        <div class="pt-2 w-full px-2">
+          <div class="flex justify-between items-start">
+            <h1 class="text-2xl font-semibold roboto text-gray-700">Cox's Bazar</h1>
+            <p class="text-lg font-medium text-gray-600 sofadi">$3.5k</p>
+          </div>
+          <p class="text-sm mt-2 font-medium text-gray-600 sofia">🚍 12 Day's trip</p>
+        </div>
+      </div>
+      <div
+        class="flex max-w-[280px] h-[350px] flex-col items-center justify-center space-y-3 rounded-xl bg-gray-100 pb-5 shadow-lg">
+        <div class="relative cursor-pointer w-full h-[280px] rounded-t-xl overflow-hidden group">
+          <img class="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+            src="./images/banner.png" alt="" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-500 ease-in-out">
+          </div>
+        </div>
+
+        <div class="pt-2 w-full px-2">
+          <div class="flex justify-between items-start">
+            <h1 class="text-2xl font-semibold roboto text-gray-700">Cox's Bazar</h1>
+            <p class="text-lg font-medium text-gray-600 sofadi">$3.5k</p>
+          </div>
+          <p class="text-sm mt-2 font-medium text-gray-600 sofia">🚍 12 Day's trip</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Subscribe Section -->
+  <section class="my-12 container mx-auto">
+    <img class=" w-full mx-auto" src="./images/subscribe section.png" alt="Subscribe Section">
+  </section>
   <!-- Footer Section -->
-  <footer class="mt-12 py-8 px-10">
+  <footer class="mt-12 container mx-auto py-8 px-10">
     <div class="footer">
       <aside>
         <i class="fa-solid fa-bus text-5xl"></i>
@@ -159,38 +355,41 @@
           Control for much longer.
         </p>
       </aside>
-      <nav>
-        <h6 class="text-lg roboto font-semibold">Services</h6>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav>
-      <nav>
-        <h6 class="text-lg roboto font-semibold">Company</h6>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav>
-      <nav>
-        <h6 class="text-lg roboto font-semibold">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
-      <form>
-        <h6 class="text-lg roboto font-semibold">Newsletter</h6>
-        <fieldset class="form-control w-80">
-          <label class="label">
-            <span class="label-text">Enter your email address</span>
-          </label>
-          <div class="join">
-            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-            <button class="btn bg-[#1DD100] join-item">Subscribe</button>
-          </div>
-        </fieldset>
-      </form>
+      <div class="flex justify-between items-center flex-wrap footer">
+        <nav>
+          <h6 class="text-lg roboto font-semibold">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="text-lg roboto font-semibold">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="text-lg roboto font-semibold">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+          <a class="link link-hover">Cookie of use</a>
+        </nav>
+        <form>
+          <h6 class="text-lg roboto font-semibold">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+              <button class="btn bg-[#1DD100] join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
     <hr class="mt-8 mb-6 bg-[#000000A6] border-dashed ">
     <div class="flex flex-col lg:flex-row justify-between text-center">
