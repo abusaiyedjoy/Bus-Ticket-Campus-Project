@@ -53,7 +53,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 sofadi">
                         <li class="hover:text-green-500 cursor-pointer"><a href="./index.html">Home</a></li>
                         <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html"> Ticket</a></li>
                         <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact Us</a></li>
@@ -75,9 +75,7 @@
             background-image: url('./images/juan-encalada-6mcVaoGNz1w-unsplash.jpg');
             background-color: rgba(0, 0, 0, 0.3);
             background-blend-mode: overlay;">
-            <div class="hero-overlay bg-opacity-10
-           rounded-xl"></div>
-            <div class="hero-content text-center text-neutral-content">
+            <div class="hero-content text-center text-neutral-content pb-3">
                 <div class="max-w-2xl text-white">
                     <h1 class="mb-5 text-5xl font-bold roboto">
                         Travel, enjoy
@@ -97,6 +95,9 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- Bus Detail Section -->
+    <section>
         <div class="flex flex-col relative md:flex-row justify-between mt-12 bg-white rounded-2xl mb-8 px-6 py-12">
             <div class="w-full md:w-[70%]">
                 <div class="flex justify-between mb-6">
@@ -445,7 +446,7 @@
         </div>
     </section>
     <!-- Footer Section -->
-    <footer class="mt-12 py-8 px-10">
+    <footer class="mt-12 container mx-auto py-8 px-10">
         <div class="footer">
             <aside>
                 <i class="fa-solid fa-bus text-5xl"></i>
@@ -454,38 +455,41 @@
                     Control for much longer.
                 </p>
             </aside>
-            <nav>
-                <h6 class="text-lg roboto font-semibold">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <h6 class="text-lg roboto font-semibold">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 class="text-lg roboto font-semibold">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </nav>
-            <form>
-                <h6 class="text-lg roboto font-semibold">Newsletter</h6>
-                <fieldset class="form-control w-80">
-                    <label class="label">
-                        <span class="label-text">Enter your email address</span>
-                    </label>
-                    <div class="join">
-                        <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-                        <button class="btn bg-[#1DD100] join-item">Subscribe</button>
-                    </div>
-                </fieldset>
-            </form>
+            <div class="flex justify-between items-center flex-wrap footer">
+                <nav>
+                    <h6 class="text-lg roboto font-semibold">Services</h6>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </nav>
+                <nav>
+                    <h6 class="text-lg roboto font-semibold">Company</h6>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </nav>
+                <nav>
+                    <h6 class="text-lg roboto font-semibold">Legal</h6>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                    <a class="link link-hover">Cookie of use</a>
+                </nav>
+                <form>
+                    <h6 class="text-lg roboto font-semibold">Newsletter</h6>
+                    <fieldset class="form-control w-80">
+                        <label class="label">
+                            <span class="label-text">Enter your email address</span>
+                        </label>
+                        <div class="join">
+                            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                            <button class="btn bg-[#1DD100] join-item">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <hr class="mt-8 mb-6 bg-[#000000A6] border-dashed ">
         <div class="flex flex-col lg:flex-row justify-between text-center">
