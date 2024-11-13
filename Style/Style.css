@@ -37,12 +37,12 @@
 
 
 .background {
-  background-image: url("./../images/banner.png");
+  background-image: url("./../images/luckey-rajaora-QYB6Y_E_Oj8-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
   border-radius: 20px;
   min-height: 100vh;
