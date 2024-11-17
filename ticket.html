@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,16 +30,16 @@
     <nav class="backdrop-blur-lg md:p-3 w-full md:container md:mx-auto fixed z-10 top-0  opacity-100 ">
         <!-- Navbar for Desktop and Tablet -->
         <div class="hidden sm:block,flex sm:flex justify-between items-center">
-            <img class="w-[90px]" src="./images/logo-color-removebg-preview.png" alt="">
+            <img class="w-[90px]" src="./images/Logo-removebg-preview.png" alt="">
             <ul class="flex justify-between items-center sofadi text-xl gap-6">
                 <li class="hover:text-green-500 cursor-pointer"><a href="./index.html">Home</a></li>
                 <li class="hover:text-green-500 cursor-pointer"><a href="./ticket.html"> Ticket</a></li>
                 <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact Us</a></li>
             </ul>
-            <button
-                class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+            <a href="./login.html"
+                class="text-2xl flex justify-center items-center font-semibold text-center z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
                     class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
-                    class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
+                    class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</a>
         </div>
         <!-- Navbar for Mobile -->
         <div class=" flex justify-between items-center sm:hidden navbar bg-base-100">
@@ -58,18 +59,18 @@
                         <li class="hover:text-green-500 cursor-pointer"><a href="./Contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <img class="w-[100px]" src="./images/asj-bus-high-resolution-logo-removebg-preview.png" alt="">
+                <img class="w-[100px]" src="./images/Journey_2_-removebg-preview.png" alt="">
             </div>
             <div class="navbar-end">
-                <button
-                    class="text-2xl font-semibold z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
+                <a href="./login.html"
+                    class="text-2xl flex justify-center items-center font-semibold text-center z-20 w-28 hover:scale-95 h-12 roboto bg-[#1DD100] rounded-xl relative overflow-hidden group duration-1000"><span
                         class="absolute bg-[#5ada46] size-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span><span
-                        class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</button>
+                        class="absolute bg-[#42d22c] size-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>Login</a>
             </div>
         </div>
     </nav>
     <!-- ASJ Paribahan Section -->
-    <section class="mt-24">
+    <section class="mt-28">
         <div class="hero h-[85vh] w-full rounded-xl bg-cover" style="
             background-image: url('./images/juan-encalada-6mcVaoGNz1w-unsplash.jpg');
             background-color: rgba(0, 0, 0, 0.3);
@@ -445,58 +446,69 @@
         </div>
     </section>
     <!-- Footer Section -->
-    <footer class="mt-12 container mx-auto py-8 px-10">
-        <div class="footer">
+    <footer class="mt-12 container mx-auto py-4 px-6">
+        <div class="footer flex flex-col md:flex-row justify-between items-start">
             <aside>
-                <i class="fa-solid fa-bus text-5xl"></i>
+                <img class="w-[100px]" src="./images/Journey_2_-removebg-preview.png" alt="Journey Logo">
                 <p class="text-md font-medium">
-                    Book your trip in minute, <br> get full
-                    Control for much longer.
+                    Book your trip in minutes, <br> get full control for much longer.
                 </p>
+                <div class="flex justify-start items-center gap-4">
+                    <a href="https://www.facebook.com/profile.php?id=61556814347641" target="_blank"
+                        class="text-3xl cursor-pointer text-blue-600">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abu-saiyed-joy/" target="_blank"
+                        class="text-3xl cursor-pointer text-blue-700">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abu_saiyed_joy/" target="_blank"
+                        class="text-3xl cursor-pointer text-pink-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/abusaiyedjoy/Bus-Ticket-Campus-Project" target="_blank"
+                        class="text-3xl cursor-pointer text-gray-800">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </aside>
-            <div class="flex justify-between items-center flex-wrap footer">
+            <div class="flex justify-around items-start flex-wrap w-full mt-8">
                 <nav>
-                    <h6 class="text-lg roboto font-semibold">Services</h6>
-                    <a class="link link-hover">Branding</a>
-                    <a class="link link-hover">Design</a>
-                    <a class="link link-hover">Marketing</a>
-                    <a class="link link-hover">Advertisement</a>
+                    <h6 class="text-lg roboto font-semibold mb-4">Services</h6>
+                    <a href="#" class="link link-hover block">Booking</a>
+                    <a href="#" class="link link-hover block">Routes</a>
+                    <a href="#" class="link link-hover block">Support</a>
+                    <a href="#" class="link link-hover block">Travel</a>
                 </nav>
                 <nav>
-                    <h6 class="text-lg roboto font-semibold">Company</h6>
-                    <a class="link link-hover">About us</a>
-                    <a class="link link-hover">Contact</a>
-                    <a class="link link-hover">Jobs</a>
-                    <a class="link link-hover">Press kit</a>
+                    <h6 class="text-lg roboto font-semibold mb-4">Company</h6>
+                    <a href="#" class="link link-hover block">About</a>
+                    <a href="#" class="link link-hover block">Contact</a>
+                    <a href="#" class="link link-hover block">Jobs</a>
+                    <a href="#" class="link link-hover block">Press</a>
                 </nav>
                 <nav>
-                    <h6 class="text-lg roboto font-semibold">Legal</h6>
-                    <a class="link link-hover">Terms of use</a>
-                    <a class="link link-hover">Privacy policy</a>
-                    <a class="link link-hover">Cookie policy</a>
-                    <a class="link link-hover">Cookie of use</a>
+                    <h6 class="text-lg roboto font-semibold mb-4">Legal</h6>
+                    <a href="#" class="link link-hover block">Terms</a>
+                    <a href="#" class="link link-hover block">Privacy</a>
+                    <a href="#" class="link link-hover block">Refund</a>
+                    <a href="#" class="link link-hover block">Cookies</a>
                 </nav>
-                <form>
-                    <h6 class="text-lg roboto font-semibold">Newsletter</h6>
-                    <fieldset class="form-control w-80">
-                        <label class="label">
-                            <span class="label-text">Enter your email address</span>
-                        </label>
-                        <div class="join">
-                            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-                            <button class="btn bg-[#1DD100] join-item">Subscribe</button>
-                        </div>
-                    </fieldset>
-                </form>
+                <nav>
+                    <h6 class="text-lg roboto font-semibold mb-4">Contact</h6>
+                    <a href="#" class="link link-hover block">+8801823567254</a>
+                    <a href="#" class="link link-hover block">+8801988084185</a>
+                    <a href="#" class="link link-hover block">abusaiyedjoy1@gmail.com</a>
+                </nav>
             </div>
         </div>
-        <hr class="mt-8 mb-6 bg-[#000000A6] border-dashed ">
-        <div class="flex flex-col lg:flex-row justify-between text-center">
-            <p class=" text-center">@all rights reserved, P-Ticket services limited.2024</p>
-            <ul class="flex justify-center gap-8 underline cursor-pointer">
-                <li>Terms & condition</li>
-                <li>Return & refund policy</li>
-                <li>Privacy policy</li>
+        <hr class="mt-8 mb-6 bg-[#000000A6] border-dashed">
+        <div class="flex flex-col lg:flex-row justify-between items-center text-center">
+            <p class="text-center text-sm">@ All rights reserved, P-Ticket Services Limited. 2024</p>
+            <ul class="flex justify-center gap-8 underline cursor-pointer mt-4 lg:mt-0">
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Return & Refund Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
     </footer>

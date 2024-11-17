@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | P-Ticket Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Setup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./style/Style.css">
+</head>
+
+<body style="
+background-image: url('https://i.ibb.co.com/HBYwtL2/v2osk-1-Z2nii-BPg5-A-unsplash.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+" class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+<a href="index.html" class="absolute left-3 top-3 bg-slate-500 px-[10px] py-1 rounded-full text-xl my-5 roboto font-bold text-center text-gray-200 hover:text-[#1DD100]"><i class="fa-solid fa-arrow-left"></i></a>
+    <div class="w-full max-w-md p-6 my-10 space-y-2 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl roboto font-bold text-center text-gray-800">Sign Up</h1>
+        <p class="text-sm text-center sofia text-gray-600">Create a new account</p>
+
+        <form class="space-y-2">
+            <!-- Full Name Input -->
+            <div>
+                <label for="name" class="block text-lg roboto font-medium text-gray-700">Full Name</label>
+                <input type="text" id="name"
+                    class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm sofia focus:ring-[#1DD100] focus:border-[#1DD100]"
+                    placeholder="Your Full Name" required />
+            </div>
+
+            <!-- Email Input -->
+            <div>
+                <label for="email" class="block text-lg roboto font-medium text-gray-700">Email</label>
+                <input type="email" id="email"
+                    class="mt-1 sofia w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#1DD100] focus:border-[#1DD100]"
+                    placeholder="example@email.com" required />
+            </div>
+
+            <!-- Password Input -->
+            <div>
+                <label for="password" class="block roboto text-lg font-medium text-gray-700">Password</label>
+                <input type="password" id="password"
+                    class="mt-1 sofia w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#1DD100] focus:border-[#1DD100]"
+                    placeholder="Enter your password" required />
+            </div>
+
+            <!-- Confirm Password Input -->
+            <div>
+                <label for="confirm-password" class="block text-lg roboto font-medium text-gray-700">Confirm Password</label>
+                <input type="password" id="confirm-password"
+                    class="mt-1 w-full sofia px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#1DD100] focus:border-[#1DD100]"
+                    placeholder="Re-enter your password" required />
+            </div>
+
+            <!-- Sign Up Button -->
+            <button type="submit"
+                class="w-full py-2 bg-[#1DD100] text-white text-xl roboto font-bold rounded-md shadow hover:bg-[#16b100] focus:ring focus:ring-offset-2 focus:ring-[#1DD100]">
+                Sign Up
+            </button>
+        </form>
+
+        <div class="flex items-center mt-4 space-x-2">
+            <div class="flex-1 h-px bg-gray-300"></div>
+            <p class="text-sm text-gray-600">or sign up with</p>
+            <div class="flex-1 h-px bg-gray-300"></div>
+        </div>
+
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-gray-200">
+                <i class="fab fa-google text-lg text-red-500"></i>
+            </a>
+            <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-gray-200">
+                <i class="fab fa-facebook text-lg text-blue-600"></i>
+            </a>
+            <a href="#" class="p-3 bg-gray-100 rounded-full hover:bg-gray-200">
+                <i class="fab fa-twitter text-lg text-blue-400"></i>
+            </a>
+        </div>
+        <p class="text-center">
+            <a href="login.html" class="text-sm text-center text-gray-600 roboto">Already have an account?<span
+                    class="text-[#1DD100] hover:underline"> Sign In</span></a>
+        </p>
+    </div>
+
+</body>
+
+</html>
